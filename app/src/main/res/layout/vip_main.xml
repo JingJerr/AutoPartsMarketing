@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/holo_blue_light">
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape"
+            android:src="@drawable/car4"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刘博园"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/touxiang"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_like"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:drawable/btn_star_big_on" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的收藏"
+            android:textSize="25sp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/go" />
+        </LinearLayout>
+    </LinearLayout>
+    <View  android:layout_height="2px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"/>
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/adress" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的地址"
+            android:textSize="25sp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/go" />
+        </LinearLayout>
+    </LinearLayout>
+    <View  android:layout_height="2px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"/>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_width="37dp"
+                android:layout_height="21dp"
+                android:background="@android:color/holo_blue_light"
+                android:src="@drawable/back"
+                android:id="@+id/btn_back"
+                android:scaleType="centerInside"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品详情"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:src="@drawable/car"/>
+                <TextView
+                    android:id="@+id/Tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:paddingLeft="10dp"
+                    android:text="¥200w"/>
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="法拉利汽车经 Pininfarina 的精湛设计，始终展现出优雅姿态、卓越性能、尖端科技和火热激情的非凡融和——这种激情在如今的 V8 和 V12 引擎跑车中一览无遗，正如同法拉利车队长久以来称霸 F1 世界时所燃烧的激情。"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/lijigoumai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即购买"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

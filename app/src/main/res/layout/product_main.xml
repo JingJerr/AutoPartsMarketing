@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <!--tools:context="${relativePackage}.${activityClass}" -->
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/Iv_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/car"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/Iv_car0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/car0"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/Iv_car1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/car2"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/Iv_car2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/car3"
+                android:scaleType="fitXY"/>
+        </ViewFlipper>
+    </RelativeLayout>
+    <com.project.liuboyuan.autopartsmarketing.ListViewForScrollView
+        android:id="@+id/Lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewflipper">
+    </com.project.liuboyuan.autopartsmarketing.ListViewForScrollView>
+</LinearLayout>
+ </ScrollView>
